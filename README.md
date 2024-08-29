@@ -8,9 +8,9 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. Alternatively, this project is also deployed on Vercel at [payments-api-demo.vercel.app/](https://payments-api-demo.vercel.app/).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. Alternatively, this project is also deployed on Vercel at [https://payments-api-demo.vercel.app/](https://payments-api-demo.vercel.app/).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/getSettlement](http://localhost:3000/api/getSettlement). This endpoint can be edited in `pages/api/getSettlement.ts`.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/getSettlement](http://localhost:3000/api/getSettlement) or [https://payments-api-demo.vercel.app/api/getSettlement](https://payments-api-demo.vercel.app/api/getSettlement). This endpoint can be edited in `pages/api/getSettlement.ts`.
 
 The interactive frontend UI can be viewed in `pages/index.tsx`. Built with React, TypeScript, and TailwindCSS.
 
