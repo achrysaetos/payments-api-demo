@@ -30,7 +30,8 @@ export default function Home() {
       const data: SettlementData = await response.json();
       if (!response.ok) {
         setSettlementData(null)
-        throw new Error('Failed to fetch settlement data (' + response.status + ': ' + data.error + ')');
+        throw new Error('No settlement data found');
+        // throw new Error('Failed to fetch settlement data (' + response.status + ': ' + data.error + ')');
       }
       console.log(data)
       setSettlementData(data);
@@ -66,7 +67,7 @@ export default function Home() {
       </div>
       <button 
         onClick={fetchSettlementData} 
-        disabled={loading}
+        disabled={loading || !merchantId || !date}
         className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {loading ? 'Loading...' : 'Fetch Settlement Data'}

@@ -58,7 +58,7 @@ async function fetchTransactions(merchantId: string, date: string): Promise<Tran
   url.searchParams.append('created_at__lt', `${date}T23:59:59Z`);
 
   let response = await fetch(url.toString());
-  let maxTries = 10; // max number of tries to fetch the data (prevent stall)
+  let maxTries = 5; // max number of tries to fetch the data (prevent stall)
 
   while (!response.ok && maxTries > 0) {
     response = await fetch(url.toString());
