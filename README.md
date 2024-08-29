@@ -24,3 +24,7 @@ curl http://localhost:3000/api/getSettlement?merchantId=3609480a-2049-4940-8077-
 # or
 curl https://payments-api-demo.vercel.app/api/getSettlement?merchantId=3609480a-2049-4940-8077-39a0568409a0&date=2023-01-13
 ```
+
+## Screenshot
+
+![Screenshot](./public/screenshot-1.png)
